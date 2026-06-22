@@ -8,10 +8,26 @@
 import SwiftUI
 
 @main
-struct VyumiExampleIoSApp: App {
+struct VyumiExampleIosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootViewController()
+                .ignoresSafeArea()
         }
+    }
+}
+
+struct RootViewController: UIViewControllerRepresentable {
+
+    func makeUIViewController(context: Context) -> UINavigationController {
+        UINavigationController(
+            rootViewController: HomeViewController()
+        )
+    }
+
+    func updateUIViewController(
+        _ uiViewController: UINavigationController,
+        context: Context
+    ) {
     }
 }

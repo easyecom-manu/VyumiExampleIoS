@@ -1,0 +1,24 @@
+{
+  "originHash" : "f5e0cdadaf9e41cba522d253dc40a5bbded88f83ea58441333f5df5bd42a3758",
+  "pins" : [
+    {
+      "identity" : "express-video-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zegolibrary/express-video-ios.git",
+      "state" : {
+        "revision" : "6dc67cb27a0cdcd67f71848768cf26cac6e9c6d0",
+        "version" : "3.24.1"
+      }
+    },
+    {
+      "identity" : "video-call-customer-ios-sdk-pub",
+      "kind" : "remoteSourceControl",
+      "location" : "https://bitbucket.org/vyumi/video-call-customer-ios-sdk-pub.git",
+      "state" : {
+        "revision" : "52fe5bb5a5087565aaad9534da074cc962f6f274",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

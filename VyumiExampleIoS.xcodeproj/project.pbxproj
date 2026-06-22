@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE30C48F2FE9412E00CACD97 /* VyumiLiveCalliOS in Frameworks */ = {isa = PBXBuildFile; productRef = CE30C48E2FE9412E00CACD97 /* VyumiLiveCalliOS */; };
+		CE30C4B32FE96B8900CACD97 /* VyumiLiveCalliOS in Frameworks */ = {isa = PBXBuildFile; productRef = CE30C4B22FE96B8900CACD97 /* VyumiLiveCalliOS */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CE30C47F2FE9411800CACD97 /* VyumiExampleIoS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VyumiExampleIoS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE30C48F2FE9412E00CACD97 /* VyumiLiveCalliOS in Frameworks */,
+				CE30C4B32FE96B8900CACD97 /* VyumiLiveCalliOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = VyumiExampleIoS;
 			packageProductDependencies = (
+				CE30C48E2FE9412E00CACD97 /* VyumiLiveCalliOS */,
+				CE30C4B22FE96B8900CACD97 /* VyumiLiveCalliOS */,
 			);
 			productName = VyumiExampleIoS;
 			productReference = CE30C47F2FE9411800CACD97 /* VyumiExampleIoS.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = CE30C4762FE9411800CACD97;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CE30C4B12FE96B8900CACD97 /* XCRemoteSwiftPackageReference "video-call-customer-ios-sdk-pub" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE30C4802FE9411800CACD97 /* Products */;
 			projectDirPath = "";
@@ -251,8 +263,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3Z3PM73HM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +297,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3Z3PM73HM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +346,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE30C4B12FE96B8900CACD97 /* XCRemoteSwiftPackageReference "video-call-customer-ios-sdk-pub" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://bitbucket.org/vyumi/video-call-customer-ios-sdk-pub.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE30C48E2FE9412E00CACD97 /* VyumiLiveCalliOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VyumiLiveCalliOS;
+		};
+		CE30C4B22FE96B8900CACD97 /* VyumiLiveCalliOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE30C4B12FE96B8900CACD97 /* XCRemoteSwiftPackageReference "video-call-customer-ios-sdk-pub" */;
+			productName = VyumiLiveCalliOS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE30C4772FE9411800CACD97 /* Project object */;
 }
